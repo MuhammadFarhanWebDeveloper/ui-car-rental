@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  
+  <body class="text-lg scroll-smooth">
+    <header class="fixed top-0 left-0 right-0 font-medium z-10 bg-slate-200">
+      <nav class="bg-slate-200 px-5 flex justify-between items-center">
+        <div class="logo w-fit h-fit">
+          <img src="assets/logo.png" width="70" height="70" alt="Jeep Image" />
+        </div>
+        <div class="relative flex justify-center items-center flex-col">
+          <div
+            id="hamburger"
+            class="w-fit h-fit cursor-pointer p-2 rounded-full block md:hidden hover:bg-gray-300"
+          >
+            <div class="w-[23px] bg-black my-1 h-[2px]"></div>
+            <div class="w-[23px] bg-black my-1 h-[2px]"></div>
+            <div class="w-[23px] bg-black my-1 h-[2px]"></div>
+          </div>
+          <ul
+            id="navitems"
+            class="hidden overflow-hidden md:h-full absolute top-14 z-50 bg-slate-200 rounded p-4 md:static md:flex justify-center items-center gap-5 w-[400px] md:w-full"
+          >
+            <li class="my-7 md:m-auto w-fit px-2 mx-auto">
+              <a  class="navlink relative p-1" href="#">Home</a>
+            </li>
+            <li class="my-7 md:m-auto w-fit px-2 mx-auto">
+              <a  class="navlink relative p-1" href="#rent">Rent</a>
+            </li>
+            <li class="my-7 md:m-auto w-fit px-2 mx-auto">
+              <a   class="navlink relative p-1" href="#services">Services</a>
+            </li>
+            <li class="my-7 md:m-auto w-fit px-2 mx-auto">
+              <a  class="navlink relative p-1" href="#about">About Us</a>
+            </li>
+            <li class="my-7 md:m-auto w-fit px-2 mx-auto">
+              <a  class="navlink relative p-1" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-2">
+          <button class="md:block hidden p-1 px-2 rounded-lg">Sign Up</button
+          ><button class="p-1 px-2 rounded-lg bg-blue-600 text-white">
+            Sign In
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="min-h-[90vh] overflow-hidden">
+      <!-- HERO SECTION STARTS -->
+      <section
+        id="hero"
+        class="relative min-h-[85vh] p-2 py-20 flex flex-col-reverse gap-5 md:flex-row"
+      >
+        <div class="w-full flex justify-center items-center flex-col">
+          <div
+            class="first-animate md:w-[80%] w-full flex flex-col justify-center items-center gap-5"
+          >
+            <div class=" w-full text-3xl text-center md:text-5xl font-bold">
+              <span class="text-orange-700">Looking</span> to rent a car
+            </div>
+            <div class="w-full text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio fugiat sit illo? Exercitationem, corporis libero.
+            </div>
+            <div class="w-full flex justify-center items-center gap-2">
+              <img
+                src="./assets/googleplay.png"
+                alt="Get it on Google Play"
+                width="160px"
+                class="w-[160px]"
+              /><img
+                src="./assets/appstore.png"
+                alt="Download it on App Store"
+                width="160px"
+                class="w-[160px]"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex md:py-16 justify-center items-center">
+          <div
+            class="relative first-animate bg-gradient-to-b from-orange-900 to-orange-600 w-full h-[400px] md:w-[500px] md:h-[390px] rounded-lg"
+          >
+            <img
+              src="./assets/rr.png"
+              width="500"
+              class="md:-translate-x-16 absolute top-32"
+              alt="Car Image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION ENDS -->
+
+      <!-- RENT SECTION STARTS HERE -->
+      <section class="py-20" id="rent">
+        <div>
+          <div class="text-center">HOW IT WORLKS</div>
+          <h1 class="text-center font-bold text-3xl mb-10">
+            Rent With 3 Easy Steps
+          </h1>
+        </div>
+        <div
+          class="w-full my-5 flex justify-center gap-3 items-center flex-wrap"
+        >
+          <div class="w-[300px] py-2 shadow-[0px_5px_15px_#0009]">
+            <div class="">
+              <img
+                class="mx-auto"
+                src="./assets/location.svg"
+                width="35"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl my-2 text-center font-semibold">
+              Choose Location
+            </h1>
+            <p class="w-full text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              soluta facilis vel?
+            </p>
+          </div>
+          <div class="w-[300px] py-2 shadow-[0px_5px_15px_#0009]">
+            <div class="w-fit mx-auto">
+              <img
+                class="mx-auto"
+                src="./assets/pickupdate.svg"
+                width="35"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl my-2 text-center font-semibold">Pick-Up Date</h1>
+            <p class="w-full text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              soluta facilis vel?
+            </p>
+          </div>
+          <div class="w-[300px] py-2 shadow-[0px_5px_15px_#0009]">
+            <div class="">
+              <img
+                class="mx-auto"
+                src="./assets/bookmark-svgrepo-com.svg"
+                width="35"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl my-2 text-center font-semibold">Book a car</h1>
+            <p class="w-full text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              soluta facilis vel?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- RENT SECTION ENDS HERE -->
+
+      <!-- SERVICES SECTION STARTS HERE -->
+
+      <section class="py-20" id="services">
+        <div class="md:w-1/3 mx-auto">
+          <div class="text-center font-medium">HOW IT WORKS</div>
+          <h1 class="text-center font-bold text-3xl mb-10">
+            Explore Our Top Dealers From Top Rated Dealers
+          </h1>
+        </div>
+        <div class="flex gap-3 items-center justify-center p-3 md:p-12 flex-wrap">
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/marcedes-benz.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 Marcedes Benz</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/toyota-yaris.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 Toyota Yaris</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/supra-mk5.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 Supra MK-5</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/audi-r8.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 Audi R8</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/bmw-i7.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 BMW I7</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[445px] px-5 py-2 rounded-lg shadow-[0px_5px_15px_#0009]"
+          >
+            <div class="w-fit h-fit border-black p-2">
+              <img
+                src="./assets/honda-civic.jfif"
+                class="object-cover rounded-lg w-[350px] h-[220px]"
+                width="350px"
+                alt=""
+              />
+            </div>
+            <div class="px-3 flex flex-col justify-center gap-1">
+              <div class="border my-2 px-2 border-black rounded-lg w-fit">
+                2024
+              </div>
+              <div class="font-semibold my-2">2024 Honda Civic</div>
+              <div class="my-2">
+                <span class="text-orange-600 font-medium">$58500|$358</span
+                >/month
+              </div>
+              <button
+                class="w-full rounded-lg bg-blue-700 text-white font-medium py-2"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION ENDS HERE -->
+
+      <!-- ABOUT SECTION STARTS HERE -->
+      <section class="py-20" id="about">
+        <div class="md:w-1/3 mx-auto">
+          <div class="text-center font-medium">KNOW ABOUT US</div>
+          <h1 class="text-center font-bold text-3xl mb-10">
+            Best Customer Experience
+          </h1>
+        </div>
+        <div
+          class="flex justify-center flex-col md:flex-row items-center gap-3 px-3 md:px-32"
+        >
+          <div class="w-full">
+            <img
+              src="./assets/header.png"
+              class="transform -scale-x-100"
+              width="500px"
+              alt=""
+            />
+          </div>
+          <div class="w-full">
+            <div class="text-2xl text-center text-red-500">ABOUT US</div>
+            <div class="my-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,
+              placeat assumenda impedit repudiandae architecto cumque. Nostrum,
+              quo? Obcaecati iste voluptatibus quia saepe inventore modi
+              reprehenderit quae. Sed, possimus nam. Amet ratione maxime
+              voluptatibus officia a optio necessitatibus reiciendis!
+              Consectetur fugiat repudiandae dolorum et!
+            </div>
+            <button class="rounded-lg bg-blue-900 text-white font-medium p-2">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION ENDS HERE -->
+      <!-- REVIEW SECTION STARTS HERE -->
+      <section class="py-20" id="reviews">
+        <div class="md:w-1/3 mx-auto">
+          <div class="text-center font-medium">Review</div>
+          <h1 class="text-center font-bold text-3xl mb-10">
+            Best Customer Experience
+          </h1>
+        </div>
+        <div class="flex gap-3 justify-center items-center flex-wrap">
+          <div
+            class="w-[350px] py-2 rounded-lg shadow-[0px_5px_15px_#0009] flex flex-col gap-3 justify-center px-7"
+          >
+            <div class="mx-auto">
+              <img
+                src="./assets/person-1.jfif"
+                width="80"
+                class="rounded-full w-[80px] h-[80px] object-cover"
+                alt=""
+              />
+            </div>
+            <ul class="w-fit mx-auto flex gap-1">
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img
+                  src="./assets/star-half.svg"
+                  class=""
+                  width="15px"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <div class="text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+              similique enim quos delectus error reiciendis voluptas rerum vitae
+              fugit, unde sequi esse nobis saepe. Repellat.
+            </div>
+          </div>
+          <div
+            class="w-[350px] py-2 rounded-lg shadow-[0px_5px_15px_#0009] flex flex-col gap-3 justify-center px-7"
+          >
+            <div class="mx-auto">
+              <img
+                src="./assets/person-2.jfif"
+                width="80"
+                class="rounded-full w-[80px] h-[80px] object-cover"
+                alt=""
+              />
+            </div>
+            <ul class="w-fit mx-auto flex gap-1">
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img
+                  src="./assets/star-half.svg"
+                  class=""
+                  width="15px"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <div class="text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+              similique enim quos delectus error reiciendis voluptas rerum vitae
+              fugit, unde sequi esse nobis saepe. Repellat.
+            </div>
+          </div>
+          <div
+            class="w-[350px] py-2 rounded-lg shadow-[0px_5px_15px_#0009] flex flex-col gap-3 justify-center px-7"
+          >
+            <div class="mx-auto">
+              <img
+                src="./assets/person-3.jfif"
+                width="80"
+                class="rounded-full w-[80px] h-[80px] object-cover"
+                alt=""
+              />
+            </div>
+            <ul class="w-fit mx-auto flex gap-1">
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img src="./assets/star.svg" class="" width="15px" alt="" />
+              </li>
+              <li>
+                <img
+                  src="./assets/star-half.svg"
+                  class=""
+                  width="15px"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <div class="text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+              similique enim quos delectus error reiciendis voluptas rerum vitae
+              fugit, unde sequi esse nobis saepe. Repellat.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- REVIEW SECTION ENDS HERE -->
+    </main>
+    <footer
+      class="bg-slate-200 w-full px-10 py-5 flex justify-between flex-col md:flex-row items-center"
+    >
+      <div class="logo w-fit h-fit">
+        <img src="assets/logo.png" width="70" height="70" alt="Jeep Image" />
+      </div>
+      <div>
+        <p class="text-medium font-medium">
+          UI Project by
+          <span class="text-orange-600">Hafiz Muhammad Farhan</span>
+        </p>
+      </div>
+      <div class="flex gap-2 justify-center items-center">
+        <a href="#">
+          <img src="./assets/facebook-svgrepo-com.svg" width="30" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/instagram-svgrepo-com.svg" width="40" alt="" />
+        </a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
